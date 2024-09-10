@@ -40,5 +40,30 @@ body.hidden {
     color: rgb(102, 0, 255);
     transition: all 0.5s;
   }
-  
+  .icon-container {
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-container i {
+    color: gray;
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info p {
+    margin-left: 10px;
+    font-size: 1.5rem; /* Adjust as needed */
+  }  
   
