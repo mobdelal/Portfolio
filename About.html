@@ -17,19 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="./homeStyles.css" />
     <title>About</title>
-    <style>
-      .navbar-nav {
-        flex: 1;
-        justify-content: center;
-      }
-    </style>
   </head>
-  <body>
+  <body class="hidden">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img
             src="./mohammed-abdelal-high-resolution-logo-transparent (1).png"
             width="120"
@@ -125,7 +119,10 @@
           <div class="fs-5 text-secondary">
             <p class="opacity-50">May-2024 - Oct-2024</p>
             <p>4-Month Diploma , Intensive Code Camp (ICC)</p>
-            <p>Full Stack Web Development Using .Net</p>
+            <p>
+              Full Stack Web Development Using .Net , Information Technology
+              Institute (ITI)
+            </p>
           </div>
         </div>
         <div class="d-flex mt-3">
@@ -154,7 +151,11 @@
           href="./About.html"
           >About</a
         >
-        <a class="text-decoration-none link-secondary me-3" href="">Contact</a>
+        <a
+          class="text-decoration-none link-secondary me-3"
+          href="./Contact.html"
+          >Contact</a
+        >
       </div>
       <div class="fs-3 me-5">
         <a
@@ -163,7 +164,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="LinkedIn"
         >
-          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-linkedin social"></i>
         </a>
         <a
           href="https://www.facebook.com/mohammed.abdelal.9"
@@ -171,7 +172,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="Facebook"
         >
-          <i class="bi bi-facebook"></i>
+          <i class="bi bi-facebook social"></i>
         </a>
         <a
           href="https://github.com/mobdelal"
@@ -179,7 +180,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="GitHub"
         >
-          <i class="bi bi-github"></i>
+          <i class="bi bi-github social"></i>
         </a>
         <a
           href="https://twitter.com"
@@ -187,7 +188,7 @@
           class="text-decoration-none link-secondary"
           aria-label="Twitter"
         >
-          <i class="bi bi-twitter"></i>
+          <i class="bi bi-twitter social"></i>
         </a>
       </div>
     </div>
@@ -200,19 +201,21 @@
           ?
         </h3>
         <div class="pt-3">
-          <button
-            type="button"
-            class="btn"
-            style="background-color: rgb(102, 0, 255); color: white"
-          >
-            Get In Touch
-          </button>
+          <a href="./Contact.html" class="text-decoration-none">
+            <button
+              type="button"
+              class="btn"
+              style="background-color: rgb(102, 0, 255); color: white"
+            >
+              Get In Touch
+            </button>
+          </a>
           <button type="button" class="btn btn-outline-dark">
             Browse Projects
           </button>
         </div>
       </div>
-      <div class="mt-4 me-3">
+      <div class="mt-4 me-3 ms-5">
         <p>
           ©2024 All Rights Reserved. <br />
           Made with 💜 by Mohammed Abdelal
@@ -225,5 +228,14 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.remove("hidden");
+      });
+
+      window.addEventListener("beforeunload", function () {
+        document.body.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

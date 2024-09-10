@@ -17,51 +17,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="./homeStyles.css">
 
     <title>Portfolio</title>
-    <style>
-      .navbar-nav {
-        flex: 1;
-        justify-content: center;
-      }
-      .rotate-45 {
-        display: inline-block;
-        transform: rotate(-40deg);
-      }
-      .circular-border {
-        width: 100%;
-        max-width: 300px; /* Set maximum width */
-        height: auto; /* Maintain aspect ratio */
-        border: 1px solid purple; /* Purple border with thickness */
-        border-radius: 50%; /* Make the border circular */
-        display: flex; /* Flexbox for centering */
-        align-items: center; /* Vertically center */
-        justify-content: center; /* Horizontally center */
-        margin: auto; /* Center horizontally */
-        padding: 10px; /* Space between border and image */
-        background: white; /* Background color of the circular border */
-      }
-      .circular-border img {
-        width: 100%; /* Adjust image to fit within the container */
-        height: 100%; /* Adjust image to fit within the container */
-        object-fit: cover; /* Cover the container */
-        border-radius: 50%; /* Ensure the image itself is circular */
-      }
-    </style>
   </head>
-  <body>
+  <body class="hidden">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img
             src="./mohammed-abdelal-high-resolution-logo-transparent (1).png"
             width="120"
             style="margin-right: 20px"
           />
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
         <div
           class="collapse navbar-collapse d-flex justify-content-center"
           id="navbarNav"
@@ -127,13 +96,15 @@
             build highly functional user-friendly applications.
           </p>
           <div class="pt-3">
-            <button
-              type="button"
-              class="btn"
-              style="background-color: rgb(102, 0, 255); color: white"
-            >
-              Get In Touch
-            </button>
+            <a href="./Contact.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="btn"
+                style="background-color: rgb(102, 0, 255); color: white"
+              >
+                Get In Touch
+              </button>
+              </a>
             <button type="button" class="btn btn-outline-dark">
               Browse Projects
             </button>
@@ -141,13 +112,13 @@
         </div>
         <div class="col-lg-6 d-flex justify-content-center align-items-center">
           <div class="circular-border">
-            <img src="./me-modified.jpg" alt="Profile Picture" />
+            <img src="./me-modified.jpg" alt="My Picture" />
           </div>
         </div>
       </div>
     </div>
     <div class="mt-5" id="projects">
-      <div class="mb-4">
+      <div class="mb-4 ms-4">
         <h2
           class="display-2 ms-5"
           style="font-weight: 600; display: inline-block"
@@ -164,60 +135,65 @@
           .
         </h2>
       </div>
-      <div class="d-flex flex-wrap">
-        <div class="col-5 ms-5 me-3">
-          <figure class="figure">
-            <img
-              src="./proj.png"
-              class="figure-img img-fluid rounded"
-              height="500px"
-              width="700px"
-              alt="..."
-            />
-            <h4 style="font-weight: 600">Desktop application</h4>
-            <figcaption class="figure-caption">
-              A Desktop windows forms E-Commerce Application with Login and
-              Admin features like adding and editing products using C#, Entity
-              Framework And Onion Architecture.
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-5 ms-4">
-          <figure class="figure">
-            <img
-              src="./proj.png"
-              class="figure-img img-fluid rounded"
-              height="500px"
-              width="700px"
-              alt="..."
-            />
-            <h4 style="font-weight: 600">E-Commerce Store</h4>
-            <figcaption class="figure-caption">
-              A FrontEnd multipage Application for a clothing brand store using
-              only native JavaScript, HTML And CSS.
-            </figcaption>
-          </figure>
-        </div>
-        <div class="ms-5 mt-4 col-5">
-          <figure class="figure">
-            <img
-              src="./proj.png"
-              class="figure-img img-fluid rounded"
-              height="500px"
-              width="700px"
-              alt="..."
-            />
-            <h4 style="font-weight: 600">Hotel Management System</h4>
-            <figcaption class="figure-caption">
-              A Hotel Management System using SQL only With Stored Procedures,
-              Views, Functions, And Triggers.
-            </figcaption>
-          </figure>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4 mb-4">
+            <figure class="figure">
+              <img
+                src="./proj.png"
+                class="figure-img img-fluid rounded"
+                height="500px"
+                width="700px"
+                alt="Desktop application"
+              />
+              <h4 style="font-weight: 600">Desktop application</h4>
+              <figcaption class="figure-caption">
+                A Desktop windows forms E-Commerce Application with Login and
+                Admin features like adding and editing products using C#, Entity
+                Framework And Onion Architecture.
+              </figcaption>
+            </figure>
+          </div>
+      
+          <div class="col-lg-6 col-md-4 mb-4">
+            <figure class="figure">
+              <img
+                src="./proj.png"
+                class="figure-img img-fluid rounded"
+                height="500px"
+                width="700px"
+                alt="E-Commerce Store"
+              />
+              <h4 style="font-weight: 600">E-Commerce Store</h4>
+              <figcaption class="figure-caption">
+                A FrontEnd multipage Application for a clothing brand store using
+                only native JavaScript, HTML And CSS.
+              </figcaption>
+            </figure>
+          </div>
+      
+          <div class="col-lg-6 col-md-4 mb-4">
+            <figure class="figure">
+              <img
+                src="./proj.png"
+                class="figure-img img-fluid rounded"
+                height="500px"
+                width="700px"
+                alt="Hotel Management System"
+              />
+              <h4 style="font-weight: 600">Hotel Management System</h4>
+              <figcaption class="figure-caption">
+                A Hotel Management System using SQL only With Stored Procedures,
+                Views, Functions, And Triggers.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
-    </div>
+      
+      
     <div class="mt-5">
-      <div class="mb-4">
+      <div class="mb-4 ms-4">
         <h2
           class="display-2 ms-5"
           style="font-weight: 600; display: inline-block"
@@ -234,44 +210,50 @@
           .
         </h2>
       </div>
-      <div class="d-flex justify-content-around flex-wrap">
-        <div>
-          <h3>Backend</h3>
-          <div class="text-secondary">
-            <h5>SQL</h5>
-            <h5>C#</h5>
-            <h5>ASP.Net Core MVC</h5>
-            <h5>ASP.Net Web API</h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3>Backend</h3>
+            <div class="text-secondary">
+              <h5>SQL</h5>
+              <h5>C#</h5>
+              <h5>ASP.Net Core MVC</h5>
+              <h5>ASP.Net Web API</h5>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3>Frontend</h3>
-          <div class="text-secondary">
-            <h5>Angular</h5>
-            <h5>HTML5</h5>
-            <h5>CSS3</h5>
-            <h5>JavaScript</h5>
+          
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3>Frontend</h3>
+            <div class="text-secondary">
+              <h5>Angular</h5>
+              <h5>HTML5</h5>
+              <h5>CSS3</h5>
+              <h5>JavaScript</h5>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3>Soft Skills</h3>
-          <div class="text-secondary">
-            <h5>Effective communication</h5>
-            <h5>Collaboration</h5>
-            <h5>Commitment</h5>
-            <h5>Leadership</h5>
+          
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3>Soft Skills</h3>
+            <div class="text-secondary">
+              <h5>Effective communication</h5>
+              <h5>Collaboration</h5>
+              <h5>Commitment</h5>
+              <h5>Leadership</h5>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3>Other Skills</h3>
-          <div class="text-secondary">
-            <h5>OOP</h5>
-            <h5>Source Control</h5>
-            <h5>Solid Principles</h5>
-            <h5>Design Patterns</h5>
+          
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h3>Other Skills</h3>
+            <div class="text-secondary">
+              <h5>OOP</h5>
+              <h5>Source Control</h5>
+              <h5>Solid Principles</h5>
+              <h5>Design Patterns</h5>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
     <div class="d-flex justify-content-between" style="margin-top: 200px">
       <div class="d-flex ms-5 fs-5 flex-wrap">
@@ -288,7 +270,7 @@
           >About</a
         >
         <a
-          class="text-decoration-none link-secondary me-3"
+          class="text-decoration-none link-secondary me-3 "
           href="./Contact.html"
           >Contact</a
         >
@@ -300,7 +282,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="LinkedIn"
         >
-          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-linkedin social"></i>
         </a>
         <a
           href="https://www.facebook.com/mohammed.abdelal.9"
@@ -308,7 +290,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="Facebook"
         >
-          <i class="bi bi-facebook"></i>
+          <i class="bi bi-facebook social"></i>
         </a>
         <a
           href="https://github.com/mobdelal"
@@ -316,7 +298,7 @@
           class="me-3 text-decoration-none link-secondary"
           aria-label="GitHub"
         >
-          <i class="bi bi-github"></i>
+          <i class="bi bi-github social"></i>
         </a>
         <a
           href="https://twitter.com"
@@ -324,7 +306,7 @@
           class="text-decoration-none link-secondary"
           aria-label="Twitter"
         >
-          <i class="bi bi-twitter"></i>
+          <i class="bi bi-twitter social"></i>
         </a>
       </div>
     </div>
@@ -337,6 +319,7 @@
           ?
         </h3>
         <div class="pt-3">
+          <a href="./Contact.html" class="text-decoration-none">
           <button
             type="button"
             class="btn"
@@ -344,12 +327,13 @@
           >
             Get In Touch
           </button>
+          </a>
           <button type="button" class="btn btn-outline-dark">
             Browse Projects
           </button>
         </div>
       </div>
-      <div class="mt-4 me-3">
+      <div class="mt-4 me-3 ms-5">
         <p>
           ©2024 All Rights Reserved. <br />
           Made with 💜 by Mohammed Abdelal
@@ -362,5 +346,14 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('hidden');
+      });
+      
+      window.addEventListener('beforeunload', function() {
+        document.body.classList.add('hidden');
+      });
+    </script>
   </body>
 </html>
