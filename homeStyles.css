@@ -9,6 +9,12 @@ body.hidden {
     flex: 1;
     justify-content: center;
   }
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      width: 100px; /* Smaller logo on small screens */
+      margin-right: 10px;
+    }
+  }
   
   .rotate-45 {
     display: inline-block;
