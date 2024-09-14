@@ -156,4 +156,26 @@ body.hidden {
       font-size: 0.75rem; 
     }
   }
+  @media (max-width: 767px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .col-lg-6 {
+      margin-bottom: 20px; 
+    }
+  
+    .mt-lg-0 {
+      margin-top: 0 !important;
+    }
+  
+    .mt-4 {
+      margin-top: 1.5rem; 
+    }
+  
+    .pt-5 {
+      padding-top: 3rem; 
+    }
+  }
   
